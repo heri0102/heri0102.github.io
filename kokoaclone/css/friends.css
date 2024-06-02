@@ -1,8 +1,8 @@
-@import url('mediaquery.css');
+@import url('common.css');
 .nav-fixed{
   position: fixed;
   width: 100vw;
-  background-color: #EBF2FE;
+  background-color: #59473f;
 }
 .nav-bar{
   margin: 10px;
