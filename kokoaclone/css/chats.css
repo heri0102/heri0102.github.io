@@ -1,4 +1,4 @@
-@import url('mediaquery.css');
+@import url('common.css');
 .nav-fixed{
   position: fixed;
   width: 100vw;
