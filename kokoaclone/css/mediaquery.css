@@ -19,33 +19,7 @@ background-color: rgba(89, 71, 63, 0.8);
   font-size:32px;
   top: 0;
 }
-.nav-fixed{
-  position: fixed;
-  width: 100vw;
-  background-color: #EBF2FE;
-}
-.nav-bar{
-  margin: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-bar div{
-  width: 33%;
-  font-size: 15px;
-}
-.nav-bar div:nth-of-type(2){
-  display: flex;
-  justify-content: center;
-}
-.nav-bar div:nth-of-type(3){
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.nav-bar i{
-  margin-left: 5px;
-}
+
 @media screen and (max-width:580px){
   #no-mobile{
     display: none;
