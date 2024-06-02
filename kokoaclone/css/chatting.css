@@ -1,0 +1,121 @@
+@import url('common.css');
+.nav-fixed{
+  position: fixed;
+  width: 100vw;
+  background-color: #59473f;
+}
+.nav-bar{
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar div{
+  width: 33%;
+  font-size: 15px;
+}
+.nav-bar div:nth-of-type(2){
+  display: flex;
+  justify-content: center;
+}
+.nav-bar div:nth-of-type(3){
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-bar i{
+  margin-left: 5px;
+}
+/* settings-nav */
+.chattings-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 23px;
+  font-size: 23px;
+  font-weight: 700;
+  color: #eeeeee;
+}
+/* 메인 채팅 콘텐츠 위치 조정 */
+.main-content-position{
+  padding-top: 120px;
+  height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.message-time{
+  background-color: rgba(128, 128, 128, 0.2);
+  color: rgb(253, 253, 253);
+  border-radius: 20px;
+  height: 30px;
+  width: 15em;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.message{
+  display: flex;
+  align-items: center;
+  padding-right: 10em;
+}
+.message img{
+  width: 4em;
+  height: 4em;
+  border-radius: 25px;
+}
+.what-message div:first-child{
+  margin: 10px 0 3px 20px;
+  color: #eeeeee;
+  font-weight: 600;
+  font-size: 18px;
+}
+.what-message div:nth-of-type(2){
+  width: 15em;
+  height: 4em;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: rgb(10, 10, 10);
+  font-weight: 500;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 0 10px 10px 10px;
+}
+/* 하단 상태바  */
+.foot-nav{
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px 30px;
+  color: #bbbbbb;
+  font-size: large;
+}
+.input{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  border-radius: 30px;
+  background-color: white;
+  padding-right: 10px;
+}
+.input div{
+  padding-left: 10px;
+}
+.input p{
+  padding-right: 40%;
+  color: rgba(10, 10, 10, 0.5);
+  font-size: 15px;
+}
+a:link{
+  color: rgb(10, 10, 10);
+}
+a:visited{
+  color: rgb(10, 10, 10);
+}
