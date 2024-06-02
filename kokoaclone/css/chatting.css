@@ -1,8 +1,14 @@
 @import url('common.css');
+body{
+  background-color: rgba(142, 184, 252, 0.177);
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Coming Soon', cursive;
+}
 .nav-fixed{
   position: fixed;
   width: 100vw;
-  background-color: #59473f;
+  background-color: #EBF2FE;
 }
 .nav-bar{
   margin: 10px;
@@ -26,111 +32,62 @@
 .nav-bar i{
   margin-left: 5px;
 }
-/* friends-nav */
-.friends-nav{
-  display: flex;
-  justify-content: space-between;
-  margin: 25px 20px;
-  color: rgb(0, 44, 114);
-}
-.friends-nav div:first-child{
-  font-weight: 700;
-  font-size: 25px;
-}
-.friends-nav div:nth-of-type(2) i{
-  margin-left: 17px;
-  font-size: 20px;
-}
-/* ad */
-.ad{
-  margin: 0 10px;
-  /* border: 1px solid violet; */
-  padding: 0 30px;
+/* settings-nav */
+.chattings-nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f2f2f2;
-  border: 2px solid #ff950124;
-}
-.ad p:first-child{
-  font-weight: 600;
-  font-size: 17px;
-}
-.ad p:nth-of-type(2){
-  color: rgb(152, 150, 150);
-  font-size: 14px;
-}
-.ad img{
-  width: 5em;
-  height: 5em;
+
+  margin: 23px;
+  font-size: 23px;
+  font-weight: 700;
+  color: rgb(0, 44, 114);
 }
 /* 메인 채팅 콘텐츠 위치 조정 */
 .main-content-position{
   padding-top: 120px;
   overflow-y: scroll;
   height: 110vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-/* chat room */
-.chat-box{
-  height: 79vh;
+.message-time{
+  background-color: rgba(128, 128, 128, 0.2);
+  color: rgb(253, 253, 253);
+  border-radius: 20px;
+  height: 30px;
+  width: 15em;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.chat-room{
-  margin: 30px 20px 0 20px;
+.message{
   display: flex;
   align-items: center;
-  overflow-y: scroll;
-  /* height: ; */
-  /* border: 1px solid black; */
-  /* border-bottom: 1px solid rgba(142, 184, 252, 0.397); */
+  padding-right: 10em;
 }
-.chat-room img{
-  width: 3.5em;
-  border-radius: 20px;
-  margin-right: 15px;
+.message img{
+  width: 4em;
+  height: 4em;
+  border-radius: 25px;
 }
-.chat-info{
-  width: 100vw;
-  display: flex;
-  /* justify-content: center; */
-  /* align-items: center; */
-  
-}
-.chat-info div{
-  width: 50%;
-}
-.chat-info div:nth-of-type(2){
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-end;
-}
-.chat-info div:nth-of-type(2) p{
-  font-size: 13px;
-  color: rgba(13, 85, 202, 0.5);
-  margin-bottom: 5px;
-}
-.chat-info div:nth-of-type(2) div{
-  width: 15px;
-  height: 15px;
-  background-color: rgb(112, 165, 250);
-  border-radius: 50%;
-  color: white;
-  font-size: 13px;
-  font-weight: 600;
-  display: flex;
-  justify-content: center;
-}
-.chat-info p:first-child{
-  font-size: 20px;
-  font-weight: 500;
+.what-message div:first-child{
+  margin: 10px 0 3px 20px;
   color: rgb(0, 44, 114);
+  font-weight: 600;
+  font-size: 18px;
 }
-.chat-info p:nth-of-type(2){
-  font-size: 15px;
-  color: rgba(13, 85, 202, 0.5);
-}
-.chat-room:hover{
-  background-color: rgba(142, 184, 252, 0.1);
+.what-message div:nth-of-type(2){
+  width: 15em;
+  height: 5em;
+  background-color: rgba(255, 255, 255, 0.604);
+  color: rgb(0, 70, 182);
+  font-weight: 500;
+  padding: 20px;
+  margin-left: 20px;
+  border-radius: 0 10px 10px 10px;
 }
 /* 하단 상태바  */
 .foot-nav{
@@ -140,48 +97,32 @@
   align-items: center;
   width: 100vw;
   bottom: 0;
-  background-color: #ebf2fe;
-  padding: 20px 40px;
+  background-color: #91baff;
+  padding: 10px 30px;
   color: rgb(0, 44, 114);
   font-size: large;
 }
-.foot-nav div:nth-of-type(2){
-  width: 5px;
-  height: 5px;
-  background-color: red;
-  position: absolute;
-  border-radius: 50%;
-  right: 35px;
-  top: 15px;
-}
-.foot-nav div:first-child{
-  width: 15px;
-  height: 15px;
-  background-color: red;
-  border-radius: 50%;
-  color: white;
-  font-size: 13px;
-  font-weight: 600;
+.input{
   display: flex;
-  justify-content: center;
-  position: absolute;
-  left: 14em;
-  top: 14px;
-  animation: bounce 1s ease-in-out infinite;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  height: 40px;
+  border-radius: 30px;
+  background-color: white;
+  padding-right: 10px;
 }
-@keyframes bounce{
-  50%{
-    top: 10px;
-  }
+.input div{
+  padding-left: 10px;
 }
-a{
-  outline: none;
-  border: none;
+.input p{
+  padding-right: 50%;
+  color: rgba(128, 128, 128, 0.807);
+  font-size: 15px;
 }
+
 a:link{
   color: rgb(0, 44, 114);
-  outline: none;
-  border: none;
 }
 a:visited{
   color: rgb(0, 44, 114);
