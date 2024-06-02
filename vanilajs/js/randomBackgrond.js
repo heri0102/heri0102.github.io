@@ -1,33 +1,6 @@
-const colors = [
-"#a3043f",
-"#f485d1",
-"#d8f11e",
-"#77787a",
-"#9c8c25",
-"#32e65b",
-"#87967b",
-"#cc1c48",
-"#108d2e",
-"#081d25",
-"#6af424",
-"#4ba672",
-"#51662a",
-"#c96d4e",
-"#83b529",
-"#8997ca",
-"#a35fb4",
-"#e66ba0",
-"#87c442",
-"#8d431f"
-  ];
+const backgroundImg = ["01.jfif","02.jfif","03.jfif"];
   
-  function changeBackground() {
-    const a = colors[Math.floor(Math.random() * colors.length)];
-    let b = colors[Math.floor(Math.random() * colors.length)];
-    while (a === b) {
-      b = colors[Math.floor(Math.random() * colors.length)];
-    }
-    document.body.style.background = `linear-gradient(to left, ${a}, ${b})`;
-  }
+const chonsenImage = backgroundImg[Math.floor(Math.random() * backgroundImg.length)];
+document.body.style.backgroundImage = "/img/" + chonsenImage;
   
-  window.onload = changeBackground;
+  
