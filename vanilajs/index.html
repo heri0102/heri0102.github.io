@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/todo.css">
+</head>
+<body>
+    <form id="login-form">
+        <div id="sub-info">
+            <span class="material-symbols-outlined">
+                location_on
+                </span>
+        <span id="city"></span>
+        <span id="weather"></span>
+    </div>
+        <div class = "js-clock">
+        <h1 class = "js-title">00:00:00</h1>
+      </div>
+
+            <input id="inputbox" type="text" placeholder="당신의 성함을 적어주세요" />
+            <input id="inputbtn" type="submit" value="입력">
+    </form>
+
+    <main id="main-form">
+      
+            <header>
+                <h2 id="greeting">
+                    반갑습니다.
+                    <span id="saved-username"></span>
+                </h2>
+                <p id="quotes"></p>
+            </header>
+            
+            </div>
+        
+            <div>
+                <h3 class="sub-title">할일</h3>
+                <div class="box-style">
+                    <form class="todo-form">
+                    <input required class="todo-input" type="text">
+                    </form>
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/randomBackgrond.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+    <script type="text/javascript" src="js/todo.js"></script>
+</body>
+</html>
