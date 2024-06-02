@@ -1,0 +1,98 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+
+
+#main-form {
+    font-family: 'Gasoek One', sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 1000px auto 0;
+    width: 1250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sub-title{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#main-form-left {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-right: 65px;
+}
+
+#greeting {
+    font-size: 80px;
+    margin-bottom: 40px;
+}
+
+#main-form-right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 50px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#main-form-right .box-style {
+    width: 352px;
+    height: 93%;
+}
+.box-style {
+    margin-bottom: 45px;
+}
+
+.small-box {
+
+    height: 232px;
+}
+
+.small-box .box-style {
+    margin-bottom: 45px;
+}
+
+
+.todo-style {
+    position: relative;
+    margin-top: 10px;
+}
+
+.todo-input:focus {
+    outline:none;
+}
+
+.todo-input {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-bottom: 15px;
+    width: 100%;
+    background: transparent;
+    border-width: 0;
+    border-bottom:  1px solid var(--secondary-color);
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.todo-list {
+    font-family: 'Noto Sans KR', sans-serif;
+    overflow: auto;
+    height: 92%;
+}
+
+.checkbtn {
+    position: absolute;
+    background: transparent;
+    color: var(--secondary-color);
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-width: 0;
+}
