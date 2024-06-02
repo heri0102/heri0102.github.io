@@ -1,7 +1,4 @@
 @import url('mediaquery.css');
-body{
-  background-color: rgba(89, 71, 63, 0.2);
-}
 .nav-bar{
   flex: 1;
   display: flex;
