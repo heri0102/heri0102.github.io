@@ -1,9 +1,83 @@
+
+
+
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Home - my website</title>
-  </head>
-  <body>
-    asdfsdaf
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/login-box.css">
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="css/sub-info.css">
+</head>
+<body>
+    <form id="login-form">
+        <div id="sub-info">
+            <span class="material-symbols-outlined">
+                location_on
+                </span>
+        <span id="city"></span>
+        <span id="weather"></span>
+    </div>
+        <div class = "js-clock">
+        <h1 class = "js-title">00:00:00</h1>
+      </div>
+
+            <input id="inputbox" type="text" placeholder="이름을 알려주세요." />
+            <input id="inputbtn" type="submit" value="누르세요">
+    </form>
+
+    <main id="main-form">
+      
+            <header>
+                <h2 id="greeting">
+                    반갑습니다.
+                    <span id="saved-username"></span>
+                </h2>
+                <p id="quotes"></p>
+            </header>
+            
+            </div>
+        
+            <div>
+                <h3 class="sub-title">오늘할일</h3>
+                <div class="box-style">
+                    <form class="todo-form">
+                    <input required class="todo-input" type="text">
+                    </form>
+                    <ul class="todo-list"></ul>
+                </div>
+            </div>
+            <div class="small-box">
+                    <h3 class="sub-title">일주일계획</h3>
+                    <div class="box-style">
+                        <form class="todo-form">
+                         <input required class="todo-input" type="text">
+                        </form>
+                        <ul class="todo-list"></ul>
+                    </div>
+                    
+                    <h3 class="sub-title">월간계획</h3>
+                    <div class="box-style">
+                        <form class="todo-form">
+                        <input required class="todo-input" type="text">
+                        </form>
+                        <ul class="todo-list"></ul>
+                    </div>
+                
+            </div>
+        </section>
+    </main>
+    <script type="text/javascript" src="js/randomBackgrondImg.js"></script>
+    <script type="text/javascript" src="js/randomQuote.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+    <script type="text/javascript" src="js/todo.js"></script>
+</body>
 </html>
